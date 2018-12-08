@@ -1,0 +1,23 @@
+header.site__header.header
+  .container
+    .row
+      .col-xs-4.col-sm-2.col-md-2.col-lg-2
+        .header__col
+          .header__logo
+            include logo.pug
+      .hidden-xs.hidden-sm.hidden-md.col-lg-7#navigation__box
+        .header__col
+          .header__navigation
+            include navigation.pug
+      .hidden-xs.col-sm-3.col-sm-offset-3.col-md-3.col-md-offset-4.col-lg-2.col-lg-offset-0
+        .header__col
+          .header__phone.text-center
+            include top-phone.pug
+      .col-xs-5.col-sm-2.col-md-1.col-lg-1
+        .header__col
+          #header__search.header__search.text-right
+            i.fa.fa-search(aria-hidden='true')
+      .col-xs-3.col-sm-2.col-md-1.hidden-lg#hamburger__box
+        .header__col
+          .header__hamburger.text-right
+            include hamburger.pug

@@ -1,0 +1,22 @@
+.center__right
+  display none
+  @media only screen and (min-width: sm)
+    background themeOverlay
+    bottom 0
+    display block
+    height centerLeftHeight = 420px
+    position absolute
+    right 0
+    top -50px
+    width 5%
+    z-index 2
+    &:after
+      border-left 120px solid transparent
+      border-top centerLeftHeight solid themeOverlay
+      bottom 0
+      content ''
+      height 0
+      position absolute
+      right 100%
+      top 0
+      width 0

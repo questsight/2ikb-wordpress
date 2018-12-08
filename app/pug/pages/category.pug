@@ -1,0 +1,27 @@
+extends ../layouts/default.pug
+
+block site-content
+  section.section.category
+    .section__header.category__header
+      .container
+        .row
+          .col-sm-12.text-center
+            h1.section__title.category__title
+              | Команда
+    .section__content.category__content
+      .container
+        .category__one.one
+          .row
+            .hidden-xs.col-sm-3.col-md-2
+              .category__frame.frame
+                a(href="#")
+                  img(src='assets/images/command/command_1.jpg')
+            .col-sm-9.col-md-10
+              a(href="#")
+                h2.name.category__name
+                  | Ольга Юрьевна Егорова
+              .description.category__description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis justo quam, non consequat erat interdum sed.
+              .category__tags
+              a(href="").button.button_bg_theme Подробнее

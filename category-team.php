@@ -8,7 +8,7 @@
   </div>
   <div class="section__content command__content category__content">
     <div class="wrapper">
-     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+     <?php $x=1; if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="command__cell_width_33">
         <div class="command__one">
           <div class="command__photo">
@@ -22,7 +22,9 @@
           </div>
         </div>
       </div>
-      <?php endwhile; endif; ?>
+      <?php if(($x % 3) == 0): ?>
+      <div class="clearfix"></div>
+      <?php endif; $x=$x+1;endwhile; endif; ?>
     </div>
   </div>
 </section>
